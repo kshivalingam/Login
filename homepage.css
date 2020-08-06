@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+}
+h1{
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    background: linear-gradient(to right,black,rgb(150, 148, 148));
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.login-credentials{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 65% 35%;
+    grid-gap: 5px;
+}
+.key > a{
+    padding: 2px;
+    text-decoration: none;
+    color: rgba(156, 228, 233, 0.836);
+}
+a:hover{
+    background: white;
+    color: black;
+    transition: 2s ease 0.2s;
+
+}
+form > input{
+    margin: 10px;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-size{
+    width: 210px;
+    height: 30px;
+}
+form > a{
+   margin: 40px;
+   text-align: bottom;
+}
+form > a:hover{
+    padding: 15px;
+    background: black;
+    color: white;
+    transition: 1s ease 0.2s;
+}
+.key{
+    animation-name: top-to-bottom;
+    animation-direction: alternate;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+@keyframes top-to-bottom{
+    0%{
+        transition:  ease-in-out ;
+        transform: translate(0px,0px);
+    }
+    50%{
+        transition:  ease-in-out ;
+        transform: translate(0px,10px);
+    }
+    100%{
+        transition:  ease-in-out ;
+        transform: translate(0px,20px);
+        color: white;
+    }
+}
